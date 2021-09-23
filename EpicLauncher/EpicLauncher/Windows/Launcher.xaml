@@ -1,0 +1,53 @@
+﻿<Window x:Class="GCLauncher.Launcher"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        AllowsTransparency="False"
+        OpacityMask="White" 
+        WindowStyle="None" 
+        Background="Black"
+        WindowStartupLocation="CenterScreen"
+        Title="Launcher" Height="475" Width="688" ResizeMode="NoResize"
+        MouseLeftButtonDown="Window_MouseLeftButtonDown">
+    <Grid>
+        <Image HorizontalAlignment="Left" VerticalAlignment="Top" Height="475" Width="688" Source="/images/Launcher_BG.png" Margin="0,0,0,0"/>
+        <Image Name="LogoImg" HorizontalAlignment="Left" Height="120" Width="224" VerticalAlignment="Top" Source="/images/logo.png" Margin="232,250,0,0" x:FieldModifier="public"/>
+        <TextBlock TextAlignment="Left" HorizontalAlignment="Left" Margin="59,356,0,0" TextWrapping="Wrap" Text="Servidor : ONLINE" VerticalAlignment="Top" Name="serverText" Foreground="LightGreen" Width="141" x:FieldModifier="public" FontSize="8pt"/>
+        <Grid>
+            <StackPanel x:Name="DownloadContainer" Margin="0,360,0,0" Width="581" Height="88">
+                <Image HorizontalAlignment="Left" VerticalAlignment="Top" Width="421" Source="/images/progress_bg.png" Margin="0,0,0,0"/>
+                <TextBlock Width="300" Height="15" Text="Baixando: Main.exe - 0%" Foreground="#ffffff" Margin="30,-112,200,0" Name="totalText" />
+                <ProgressBar HorizontalAlignment="Left" Height="5" Margin="56,-47,0,0" VerticalAlignment="Top" Width="300" x:Name="DownloadBarFiles" BorderBrush="{x:Null}" Value="0" Style="{StaticResource Bar3}"/>
+                <Image Width="225" Name="btn_image_game" Source="/images/play/active.png" Margin="355,-88,0,0" />
+                <Button Content="game" Opacity="0"  Margin="355,-88,0,0" Width="225" Click="ClickLauncher" Name="game" MouseEnter="GameEnter" MouseLeave="GameLeave"/>
+                <StackPanel x:Name="DownloadProgressStack" Width="35" Height="24" HorizontalAlignment="Left" Margin="39,-58,0,0">
+                    <Canvas x:Name="DownloadProgress">
+                        <Image Width="7" Height="4" Source="/images/arrow.png" Margin="14,0,0,0"/>
+                        <Rectangle Width="35" Height="20" Fill="#34b6bc"  Margin="0,4,0,0"/>
+                        <TextBlock Width="35" Height="15" Text="0%" Foreground="#ffffff" Margin="0,6,0,0" Name="percentText" TextAlignment="Center"/>
+                    </Canvas>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel x:Name="SocialContainer" Margin="-170,-445,423,0" Width="95" Height="30">
+                <Path Data="M40,0 L-80,0 -80,30 20,30 z" Stretch="Fill" Fill="#161616"/>
+                <Image HorizontalAlignment="Left" Height="10" VerticalAlignment="Top" Width="15" Source="/images/social/discord.png" Margin="8,-20,0,0" Name="ld" />
+                <Button Content="ldb" Opacity="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="8,-20,0,0" Width="15" Height="10" Click="ClickLauncher" Name="ldb" />
+                <Image HorizontalAlignment="Left" Height="10" VerticalAlignment="Top" Width="10" Source="/images/social/fb.png" Margin="37,-20,0,0" Name="lf" />
+                <Button Content="lfb" Opacity="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="37,-20,0,0" Width="10" Height="10" Click="ClickLauncher" Name="lfb" />
+                <Image HorizontalAlignment="Left" Height="10" VerticalAlignment="Top" Width="10" Source="/images/social/website.png" Margin="63,-20,0,0" Name="ls" />
+                <Button Content="lsb" Opacity="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="63,-20,0,0" Width="10" Height="10" Click="ClickLauncher" Name="lsb" />
+                <Path Data="M80,0 L-80,0 -80,30 20,30 z" Stretch="Fill" Fill="#161616" Margin="0,0,62,0"/>
+            </StackPanel>
+            <StackPanel x:Name="LauncherContainer" Margin="480,-445,-128,0" Width="80" Height="30">
+                <Path Data="M20,0 L-105,0 -60,30 20,30 z" Stretch="Fill" Fill="#161616"/>
+                <Image HorizontalAlignment="Left" Height="11" VerticalAlignment="Top" Width="12" Source="/images/repair.png" Margin="35,-21,0,0" Name="rpr" />
+                <Button Content="btnrpr" Opacity="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="35,-21,0,0" Width="12" Height="11" Click="ClickLauncher" Name="btnrpr" />
+                <Image HorizontalAlignment="Left" Height="11" VerticalAlignment="Top" Width="11" Source="/images/close.png" Margin="60,-21,0,0" Name="cl" />
+                <Button Content="btnrpr" Opacity="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="60,-21,0,0" Width="11" Height="11" Click="ClickLauncher" Name="clb" />
+            </StackPanel>
+        </Grid>
+    </Grid>
+
+</Window>

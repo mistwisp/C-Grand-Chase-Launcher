@@ -3,4 +3,5 @@ Launcher made in C# with a file checker and auto-downloader for Grand Chase Priv
 
 
 EpicLauncher Folder: Launcher source
+
 LauncherFiles Folder: Launcher filelist maker source

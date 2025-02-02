@@ -1,0 +1,31 @@
+﻿<Window x:Class="GCLauncher.Config"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        AllowsTransparency="True"
+        OpacityMask="White" 
+        WindowStyle="None" 
+        Background="Transparent"
+        WindowStartupLocation="CenterScreen"
+        Title="Config" Height="600" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="/images/bg_2.png"/>
+        <Image Height="12" Width="12" Source="/images/close_btn.png" x:Name="cl" RenderTransformOrigin="-1.667,-7.97" Margin="559,210,229,378" />
+        <TextBlock TextAlignment="Center" HorizontalAlignment="Center" Margin="0,251,0,0" TextWrapping="Wrap" Text="Sample error message!&#10;Second line!&#10;Another one..." VerticalAlignment="Top" Name="ConfigMsg" Foreground="#cccccc" Width="352" FontSize="10pt" Height="56" Opacity="0.4"/>
+        <ComboBox Name="LangSelect" Margin="315,344,319,236" SelectionChanged="LANGSelect">
+            <ComboBoxItem Content="Português"/>
+            <ComboBoxItem Content="English"/>
+            <ComboBoxItem Content="繁體中文"/>
+        </ComboBox>
+        <ComboBox Name="DllSelect" Margin="315,322,319,258" SelectionChanged="DLLSelect">
+            <ComboBoxItem Content="Opção 1"/>
+            <ComboBoxItem Content="Opção 2"/>
+            <ComboBoxItem Content="Opção 3"/>
+            <ComboBoxItem Content="Opção 4"/>
+        </ComboBox>
+        <TextBlock TextAlignment="Left" Text="Windows 10 FPS Fix" Foreground="#cccccc"  Opacity="0.4" Margin="231,208,235,374" x:Name="TitleText"/>
+        <Button Content="clb" Opacity="0" Width="12" Height="12" Click="ClickConfig" x:Name="btnclose" RenderTransformOrigin="-1.667,-7.97" Margin="559,210,229,378" Cursor="Hand" />
+    </Grid>
+</Window>

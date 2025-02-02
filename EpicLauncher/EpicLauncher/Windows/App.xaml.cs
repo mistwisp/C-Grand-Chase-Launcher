@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Windows;
 using GCLauncher.Source;
 
@@ -18,6 +19,9 @@ namespace GCLauncher{
                     Environment.Exit(0);
                 }
                 else{
+                    if (File.Exists("d3d9.dll")){
+                        File.Move("d3d9.dll", "_d3d9.dll");
+                    }
                     Splash Load = new Splash();
                 }
             }

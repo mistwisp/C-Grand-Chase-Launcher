@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\PC\\Desktop\\Hope Eternal Launcher Source\\EpicLauncher\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{76AA2814-5DB0-4A54-92DE-D8377DDCE62D}|EpicLauncher\\EpicLauncher.csproj|c:\\users\\pc\\desktop\\hope eternal launcher source\\epiclauncher\\epiclauncher\\windows\\launcher.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76AA2814-5DB0-4A54-92DE-D8377DDCE62D}|EpicLauncher\\EpicLauncher.csproj|solutionrelative:epiclauncher\\windows\\launcher.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Launcher.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Hope Eternal Launcher Source\\EpicLauncher\\EpicLauncher\\Windows\\Launcher.xaml.cs",
+              "RelativeDocumentMoniker": "EpicLauncher\\Windows\\Launcher.xaml.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\Hope Eternal Launcher Source\\EpicLauncher\\EpicLauncher\\Windows\\Launcher.xaml.cs",
+              "RelativeToolTip": "EpicLauncher\\Windows\\Launcher.xaml.cs",
+              "ViewState": "AgIAAL8AAAAAAAAAAAAewNkAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T09:27:22.312Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

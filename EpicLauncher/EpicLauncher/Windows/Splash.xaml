@@ -9,10 +9,14 @@
         WindowStyle="None" 
         Background="Transparent"
         WindowStartupLocation="CenterScreen"
-        Title="Tela" Height="143.66" Width="233" ResizeMode="NoResize">
+        Title="Tela" Height="143" Width="314" ResizeMode="NoResize">
     <Grid>
-        <Image Name="LogoImg" HorizontalAlignment="Left"  Height="148" Width="232" VerticalAlignment="Top" Source="/images/logo.png" Margin="0,-2,0,0" x:FieldModifier="public"/>
-        <ProgressBar HorizontalAlignment="Left" Height="15" VerticalAlignment="Top" Width="232" x:Name="LauncherBarTotal" BorderBrush="{x:Null}" Value="80" Margin="0,128,0,0" Style="{StaticResource Bar3}"/>
-        <TextBlock TextAlignment="Center" HorizontalAlignment="Left" Margin="0,127,0,0" TextWrapping="Wrap" Text="Checking files..." VerticalAlignment="Top" Name="splashText" Foreground="white" Width="233" x:FieldModifier="public" FontSize="8pt"/>
+        <Image Name="LogoImg" HorizontalAlignment="Center"  Height="93" Width="202" VerticalAlignment="Top" Source="/images/logo.png" x:FieldModifier="public"/>
+        <ProgressBar HorizontalAlignment="Center" Height="25" Margin="0,117,0,0" VerticalAlignment="Top" Width="291" x:Name="LauncherBarTotal" BorderBrush="{x:Null}" Value="0" Style="{StaticResource Bar}"/>
+        <TextBlock TextAlignment="Center" HorizontalAlignment="Center" Text="Checking files..." Foreground="White" FontSize="8pt" Margin="0,100,0,29" Width="314" Height="14" Name="splashText">
+            <TextBlock.Effect>
+                <DropShadowEffect ShadowDepth="2" Direction="330" Color="Black" Opacity="0.5" BlurRadius="2"/>
+            </TextBlock.Effect>
+        </TextBlock>
     </Grid>
 </Window>

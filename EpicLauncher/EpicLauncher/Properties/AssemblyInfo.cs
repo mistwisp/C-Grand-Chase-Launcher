@@ -7,13 +7,13 @@ using System.Windows;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Live Launcher")]
-[assembly: AssemblyDescription("Grand Chase Live")]
+[assembly: AssemblyTitle("Chase Hope Launcher")]
+[assembly: AssemblyDescription("Chase Hope")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Grand Chase Live")]
-[assembly: AssemblyProduct("Grand Chase Live Launcher")]
-[assembly: AssemblyCopyright("Copyright © Hime 2020")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCompany("Chase Hope")]
+[assembly: AssemblyProduct("Chase Hope Launcher")]
+[assembly: AssemblyCopyright("Copyright © Zoey 2024")]
+[assembly: AssemblyTrademark("Chase Hope")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
